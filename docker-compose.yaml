@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  app:
+    container_name: mamboo-challenge
+    restart: always
+    build: .
+    ports:
+      - "3331:3331"
+    command: npm run start
