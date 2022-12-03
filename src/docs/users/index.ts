@@ -1,7 +1,7 @@
 import updateUser from './updateUser';
 
 export default {
-  '/users/update': {
+  '/users/{id}/update': {
     ...updateUser,
   },
 };
