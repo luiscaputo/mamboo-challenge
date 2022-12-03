@@ -8,7 +8,7 @@ export default {
   '/tasks/create': {
     ...createTask,
   },
-  '/tasks/update': {
+  '/tasks/{id}/update': {
     ...updateTask,
   },
   '/tasks/{id}': {
