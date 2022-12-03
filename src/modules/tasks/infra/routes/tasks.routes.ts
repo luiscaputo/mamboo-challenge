@@ -15,7 +15,7 @@ routes.get('/tasks', new AllTasksController().handle);
 
 routes.post('/tasks/create', createTask, new CreateTaskController().handle);
 
-routes.put('/tasks/update', new UpdateTaskController().handle);
+routes.put('/tasks/:id/update', new UpdateTaskController().handle);
 
 routes.delete('/tasks/:id/remove', new DeleteTaskController().handle);
 
