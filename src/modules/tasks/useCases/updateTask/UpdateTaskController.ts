@@ -7,11 +7,11 @@ import { UpdateTaskUseCase } from './UpdateTaskUseCase';
 
 class UpdateTaskController {
   async handle(
-    req: Request<unknown, unknown, IUpdateTaskDTO>,
+    req: Request<{ id: string }, unknown, IUpdateTaskDTO>,
     res: Response<IAppResponse<any>>
   ): Promise<Response> {
+    const { id: _id } = req.params;
     const {
-      _id,
       title,
       description,
       priority,
