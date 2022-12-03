@@ -5,6 +5,6 @@ import { updateUser } from '../validators/users.validators';
 
 const routes = Router();
 
-routes.put('/users/update', updateUser, new UpdateUserController().handle);
+routes.put('/users/:id/update', updateUser, new UpdateUserController().handle);
 
 export default routes;
